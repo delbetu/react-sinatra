@@ -16,7 +16,7 @@ module.exports = {
     rules: [
       { test: /\.html$/ , use: [ 'html-loader' ] },
       { test: /\.css$/ , use: [ 'style-loader', 'css-loader' ] },
-      { test: /\.js$/, exclude: /node_modules/, use: { loader: "babel-loader" } },
+      { test: /\.(js|jsx)$/, exclude: /node_modules/, use: { loader: "babel-loader" } },
       {
         test: /\.jpe?g$|\.ico$|\.gif$|\.png$|\.svg$|\.woff$|\.ttf$|\.wav$|\.mp3$/,
         loader: 'file-loader?name=[name].[ext]'

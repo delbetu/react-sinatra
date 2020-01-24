@@ -3,17 +3,8 @@ const HtmlWebPackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: {
-    app: ['./src/index.js',
-          './src/models/group-item-model.js',
-          './src/models/item-model.js',
-          './src/models/auth-model.js',
-          './src/collections/group-item-collection.js',
-          './src/collections/item-collection.js',
-          './src/views/group-item-card-view.js',
-          './src/views/group-item-collection-view.js',
-          './src/views/group-item-view.js',
-          './src/views/item-view.js',
-          './src/views/login.js'
+    app: [
+      './src/index.js',
     ]
   },
   output: {

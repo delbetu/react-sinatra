@@ -2,7 +2,7 @@ import { combineReducers  } from 'redux'
 import { ADD_NUMBER  } from "../constants/action-types";
 
 const initialState = {
-  numbers: []
+  numbers: [1, 2]
 }
 
 const rootReducer = (state = initialState, action) => {

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import ReactDom from 'react-dom'
-import Provider from 'react-redux'
+import { Provider } from 'react-redux'
 import App from './components/app'
 import store from './store'
 import { ADD_NUMBER  } from "./constants/action-types";
@@ -16,10 +16,10 @@ store.dispatch(add_number_action(2))
 store.dispatch(add_number_action(3))
 store.dispatch(add_number_action(4))
 
-
-
 ReactDom.render(
-  <App place='index-page' />
+  <Provider store={store}>
+    <App />
+  </Provider>
   ,
   document.getElementById('main-content')
 )

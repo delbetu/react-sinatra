@@ -1,0 +1,8 @@
+*.un~
+frontend/node_modules
+new-frontend/node_modules
+**/*.log
+**/*.sqlite3
+**/tmp/
+**/.byebug_history
+**/dist/*.bundle.js

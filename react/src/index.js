@@ -1,5 +1,7 @@
 import $ from 'jquery'
 
+const sum = (a, b) => a + b;
+
 $(document).ready(function() {
-  $("#main-content").html('<h1>Hello World</h1>')
+    $("#main-content").html('<h1>'+sum(2,4)+'</h1>')
 });

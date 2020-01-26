@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
 import { ADD_NUMBER  } from "../constants/action-types"
 
-const add_number_action = (number) => ({
+const addNumberAction = (number) => ({
   type: ADD_NUMBER,
   payload: number
 })
 
 function mapDispatchToProps(dispatch) {
   return {
-    addNumber: n => dispatch(add_number_action(n))
+    addNumber: n => dispatch(addNumberAction(n))
   }
 }
 

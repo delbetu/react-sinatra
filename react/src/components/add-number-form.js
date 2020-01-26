@@ -1,10 +1,5 @@
 import React, { Component } from 'react'
-import { ADD_NUMBER  } from "../constants/action-types"
-
-const addNumberAction = (number) => ({
-  type: ADD_NUMBER,
-  payload: number
-})
+import { addNumberAction } from '../actions'
 
 function mapDispatchToProps(dispatch) {
   return {

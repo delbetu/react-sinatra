@@ -4,11 +4,10 @@ import { addNumberAction } from '../actions'
 
 function mapDispatchToProps(dispatch) {
   return {
-    addNumber: n => dispatch(addNumberAction(n))
+    addNumber: n => dispatch(addNumberAction(n)),
+    triggerSaga: request => dispatch(request)
   }
 }
-
-// requestSaga({type: 'FETCH_USER_IDS'})
 
 const mapStateToProps = state => {
   return { numbers: state.numbers  }
@@ -20,10 +19,7 @@ class ConnectedList extends Component {
   }
 
   componentDidMount() {
-    fetch("https://jsonplaceholder.typicode.com/users")
-          .then(response => response.json())
-          .then(users => users.map( u => u.id ))
-          .then(ids => { ids.map(id => this.props.addNumber(id)) })
+    this.props.triggerSaga({type: 'ADD_REMOTE_USER_IDS'})
   }
 
   render() {

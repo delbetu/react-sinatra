@@ -1,8 +1,9 @@
 import { takeEvery, call, put  } from "redux-saga/effects"
 import { addNumberAction } from '../actions'
+import { ADD_REMOTE_USER_IDS } from '../constants/action-types'
 
 export default function* watcherSaga() {
-  yield takeEvery('ADD_REMOTE_USER_IDS', workerAddRemoteUserIds)
+  yield takeEvery(ADD_REMOTE_USER_IDS, workerAddRemoteUserIds)
 }
 
 function* workerAddRemoteUserIds() {

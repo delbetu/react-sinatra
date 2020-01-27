@@ -1,11 +1,11 @@
 import React, { Component } from "react"
 import { connect  } from "react-redux"
-import { addNumberAction } from '../actions'
+import { addNumberAction, addRemoteUserIds } from '../actions'
 
 function mapDispatchToProps(dispatch) {
   return {
     addNumber: n => dispatch(addNumberAction(n)),
-    triggerSaga: request => dispatch(request)
+    addRemoteUserIds: () => dispatch(addRemoteUserIds())
   }
 }
 
@@ -19,7 +19,7 @@ class ConnectedList extends Component {
   }
 
   componentDidMount() {
-    this.props.triggerSaga({type: 'ADD_REMOTE_USER_IDS'})
+    this.props.addRemoteUserIds()
   }
 
   render() {

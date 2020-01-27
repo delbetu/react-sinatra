@@ -1,1 +1,2 @@
 export const ADD_NUMBER = 'ADD_NUMBER'
+export const ADD_REMOTE_USER_IDS = 'ADD_REMOTE_USER_IDS'

@@ -10,7 +10,8 @@
   "scripts": {
     "build": "rm -rf dist/; webpack --config webpack.prod.js",
     "dev": "webpack-dev-server --open --config webpack.dev.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "jest --notify --config jest.config.js"
   },
   "keywords": [],
   "author": "",

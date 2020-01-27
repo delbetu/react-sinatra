@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { addNumberAction } from '../actions'
+import { addNumberAction } from '../../actions'
 
 function mapDispatchToProps(dispatch) {
   return {

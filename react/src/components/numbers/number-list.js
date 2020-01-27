@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import { connect  } from "react-redux"
-import { addNumberAction, addRemoteUserIds } from '../actions'
+import { addNumberAction, addRemoteUserIds } from '../../actions'
 
 function mapDispatchToProps(dispatch) {
   return {

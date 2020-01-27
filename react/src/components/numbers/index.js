@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import NumberList from './number-list'
 import AddNumberForm from './add-number-form'
 
-const App = () => (
+const Numbers = () => (
   <div>
     <h1>Numbers!</h1>
     <NumberList />
@@ -10,4 +10,4 @@ const App = () => (
   </div>
 )
 
-export default App
+export default Numbers

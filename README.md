@@ -3,7 +3,7 @@
 ## Build backend
 
 ```bash
-pending
+ruby src/api/v1/ping.rb
 ```
 
 ## Build frontend
@@ -33,6 +33,8 @@ Visit http://localhost:8080
 * Rspec
 
 ## API
+
+curl http://localhost:4567/ping
 
 ## Endpoints (Curl examples)
 

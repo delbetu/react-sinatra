@@ -1,8 +1,10 @@
 source 'http://rubygems.org'
 
-gem 'sinatra'
-gem 'pg'
 gem 'bcrypt'
+gem 'pg'
+gem 'rom'
+gem 'rom-sql'
+gem 'sinatra'
 
 group :test do
   gem 'rspec'

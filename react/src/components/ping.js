@@ -1,10 +1,10 @@
 import React, { Component } from "react"
 import { connect  } from "react-redux"
-import { showPingResult } from '../actions'
+import { fetchPing } from '../actions'
 
 function mapDispatchToProps(dispatch) {
   return {
-    showPingResult: () => dispatch(showPingResult())
+    fetchPing: () => dispatch(fetchPing())
   }
 }
 
@@ -18,7 +18,7 @@ class ConnectedPing extends Component {
   }
 
   componentDidMount() {
-    this.props.showPingResult()
+    this.props.fetchPing()
   }
 
   render() {

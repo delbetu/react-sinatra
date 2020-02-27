@@ -1,6 +1,5 @@
-import { ADD_NUMBER  } from '../constants/action-types';
-import { ADD_REMOTE_USER_IDS } from '../constants/action-types'
-import { SHOW_PING_RESULT } from '../constants/action-types'
+import { ADD_NUMBER, ADD_REMOTE_USER_IDS  } from '../constants/action-types';
+import { FETCH_PING, UPDATE_PING_RESULT } from '../constants/action-types'
 
 export const addNumberAction = (number) => ({
   type: ADD_NUMBER,
@@ -9,4 +8,9 @@ export const addNumberAction = (number) => ({
 
 export const addRemoteUserIds = () => ({type: ADD_REMOTE_USER_IDS})
 
-export const showPingResult = () => ({type: SHOW_PING_RESULT})
+export const fetchPing = () => ({ type: FETCH_PING })
+
+export const updatePingResult = (pingResult) => ({
+  type: UPDATE_PING_RESULT,
+  payload: pingResult
+})

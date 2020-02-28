@@ -1,0 +1,7 @@
+database="app_db_development"
+user="app_user_development"
+
+sudo su - postgres -c "dropdb $database"
+sudo su - postgres -c "dropuser $user"
+
+echo 'db app_db_development droped!'

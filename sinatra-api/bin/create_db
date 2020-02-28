@@ -1,0 +1,10 @@
+#!/bin/bash
+
+database="app_db_development"
+user="app_user_development"
+
+sudo su - postgres -c "createuser --createdb --no-password $user"
+sudo su - postgres -c "createdb -O $user $database"
+
+echo 'Use this connection string to connect:'
+echo 'postgres://app_user_development:@localhost/app_db_development'

@@ -1,3 +1,5 @@
+#!/bin/bash
+
 database="app_db_development"
 user="app_user_development"
 

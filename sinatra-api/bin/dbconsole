@@ -1,0 +1,6 @@
+#!/bin/bash
+
+database="app_db_development"
+user="app_user_development"
+
+sudo su - postgres -c "psql $database $user"

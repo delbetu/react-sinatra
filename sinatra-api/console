@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+require_relative 'boot'
+
+MAIN_CONTAINER = ROM.container(
+  :sql,
+  'postgres://app_user_development:@localhost/app_db_development',
+  extensions: [:pg_json]
+)
+
+Pry.start

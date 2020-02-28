@@ -1,0 +1,10 @@
+require_relative 'boot'
+require 'rom/sql/rake_task'
+
+namespace :db do
+  task :setup do
+    ROM::SQL::RakeSupport.env = ROM.container(
+      :sql,'postgres://app_user_development:@localhost/app_db_development', extensions: [:pg_json]
+    )
+  end
+end

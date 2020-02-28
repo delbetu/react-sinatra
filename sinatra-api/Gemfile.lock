@@ -45,6 +45,7 @@ GEM
     rack (2.2.2)
     rack-protection (2.0.8.1)
       rack
+    rake (13.0.1)
     rom (5.2.1)
       rom-changeset (~> 5.2)
       rom-core (~> 5.2)
@@ -104,6 +105,7 @@ DEPENDENCIES
   byebug
   pg
   pry
+  rake
   rom
   rom-sql
   rspec
